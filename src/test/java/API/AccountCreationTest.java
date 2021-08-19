@@ -17,9 +17,10 @@ public class AccountCreationTest {
 
     @Test
     public void createNewAccount() {
-        Customer c1 = new Customer("paul","koffi");
+        Customer c1 = new Customer("paull","koffii");
         assertTrue(apiBankFacade.addCustomer(c1.getFirstName(), c1.getLastName()));
         assertFalse(apiBankFacade.addCustomer(c1.getFirstName(), c1.getLastName()));
+        assertTrue(apiBankFacade.createAccount(c1.getFirstName(), c1.getLastName()));
     }
 
 }
