@@ -31,7 +31,11 @@ public class Account
         Transaction transaction = new Transaction(value, date, customer, transactionType);
         Amount balanceAfterTransaction = transaction.getBalance(balance);
         balance = balanceAfterTransaction;
-        apiBankFacade.AddTransaction(transaction);
+        apiBankFacade.addTransaction(transaction);
         statement.addLine(transaction, balanceAfterTransaction);
+    }
+
+    public Amount getBalance() {
+        return balance;
     }
 }

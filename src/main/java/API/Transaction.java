@@ -35,4 +35,8 @@ public class Transaction {
         System.out.println("BALANCE : "+currentBalance.getValue());
         System.out.println("          #                ");
     }
+
+    public Customer getCustomer() {
+        return customer;
+    }
 }
