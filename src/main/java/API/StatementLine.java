@@ -13,4 +13,12 @@ public class StatementLine {
     public void printTo() {
         this.transaction.printTo(balance);
     }
+
+    public Transaction getTransaction() {
+        return transaction;
+    }
+
+    public Amount getBalance() {
+        return balance;
+    }
 }

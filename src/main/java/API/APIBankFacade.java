@@ -1,6 +1,5 @@
 package API;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -34,5 +33,9 @@ public class APIBankFacade {
 
     public String getBalanceOfAccountByCustomer(String firstName, String lastName){
         return BankAPI.getInstance().getBalanceOfAccountByCustomer(firstName,lastName);
+    }
+
+    public Statement getStatementByCustomer(String firstName, String lastName){
+        return BankAPI.getInstance().getStatementByCustomer(firstName,lastName);
     }
 }

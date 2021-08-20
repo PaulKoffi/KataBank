@@ -89,4 +89,13 @@ public class BankAPI {
         }
         return "account not found !";
     }
+
+    public Statement getStatementByCustomer(String firstName, String lastName){
+        for(Customer customer : customersArrayList){
+            if (customer.getFirstName().equals(firstName) && customer.getLastName().equals(lastName)) {
+                return this.accountList.get(customer).getStatement();
+            }
+        }
+        return new Statement();
+    }
 }

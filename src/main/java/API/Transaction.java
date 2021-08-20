@@ -39,4 +39,16 @@ public class Transaction {
     public Customer getCustomer() {
         return customer;
     }
+
+    public TransactionType getTransactionType() {
+        return transactionType;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public Amount getAmount() {
+        return amount;
+    }
 }
