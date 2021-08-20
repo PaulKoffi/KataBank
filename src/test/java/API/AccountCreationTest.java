@@ -14,10 +14,9 @@ public class AccountCreationTest {
     public void initialize() {
     }
 
-
     @Test
     public void createNewAccount() {
-        Customer c1 = new Customer("paull","koffii");
+        Customer c1 = new Customer("john","travolta");
         assertTrue(apiBankFacade.addCustomer(c1.getFirstName(), c1.getLastName()));
         assertFalse(apiBankFacade.addCustomer(c1.getFirstName(), c1.getLastName()));
         assertTrue(apiBankFacade.createAccount(c1.getFirstName(), c1.getLastName()));

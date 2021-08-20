@@ -21,4 +21,8 @@ public class Statement {
         }
         System.out.println("-------------------------------------------------------------------------------------");
     }
+
+    public ArrayList<StatementLine> getStatementLines() {
+        return statementLines;
+    }
 }

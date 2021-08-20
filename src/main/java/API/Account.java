@@ -38,4 +38,8 @@ public class Account
     public Amount getBalance() {
         return balance;
     }
+
+    public Statement getStatement() {
+        return statement;
+    }
 }
