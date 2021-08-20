@@ -1,3 +1,3 @@
 # KataBank
 
-* Statut d'Intégration continue : ![CI Build](https://github.com/PaulKoffi/KataBank/workflows/CI/badge.svg?branch=master)
+* Statut d'Intégration continue : [![Java CI with Maven](https://github.com/PaulKoffi/KataBank/actions/workflows/maven.yml/badge.svg)](https://github.com/PaulKoffi/KataBank/actions/workflows/maven.yml)
